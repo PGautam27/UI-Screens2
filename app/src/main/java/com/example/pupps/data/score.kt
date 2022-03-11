@@ -1,13 +1,34 @@
 package com.example.pupps.data
 
+import androidx.compose.ui.graphics.Color
+import com.example.pupps.ui.theme.*
+
 data class score(val value : Int){
     var status = getStatus(value)
-
-    private fun getStatus(value : Int){
-        when(value){
-            in 0..30 -> "low"
-            in 31..60 -> "moderate"
-            in 61..10 -> "high"
+    var color = getColor(value)
+    var textColor = getTextColor(value)
+    private fun getStatus(value : Int):String{
+        return when(value){
+            in 0..30 -> "LOW"
+            in 31..65 -> "MODERATE"
+            in 66..100 -> "HIGH"
+            else -> "LOW"
+        }
+    }
+    private fun getColor(value:Int): Color {
+        return when(value){
+            in 0..30 -> lightRed
+            in 31..65 -> lightOrange
+            in 66..100 -> lightGreen
+            else -> lightRed
+        }
+    }
+    private fun getTextColor(value: Int): Color {
+        return when(value){
+            in 0..30 -> lightRedText
+            in 31..65 -> lightOrangeText
+            in 66..100 -> lightGreenText
+            else -> lightRedText
         }
     }
 }
