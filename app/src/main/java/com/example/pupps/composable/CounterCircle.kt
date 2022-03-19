@@ -27,6 +27,7 @@ import com.example.pupps.data.score
 fun countIndicatorCircle(
     score : score
 ) {
+
     val animationProgress by animateFloatAsState(
         targetValue = score.value.toFloat()/100.0F,
         animationSpec = ProgressIndicatorDefaults.ProgressAnimationSpec
