@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.pupps.composable.Analysis
 import com.example.pupps.percieverance.combosables.MyDay
+import com.example.pupps.percieverance.components.scheduledCard
 import com.example.pupps.ui.theme.PuppsTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,7 +20,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PuppsTheme {
-                MyDay()
+                scheduledCard()
             }
         }
     }
