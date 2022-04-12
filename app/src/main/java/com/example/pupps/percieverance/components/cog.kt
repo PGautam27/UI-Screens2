@@ -64,10 +64,10 @@ fun Cog() {
             mainAxisSpacing = 20.dp,
             crossAxisAlignment = FlowCrossAxisAlignment.Center,
             mainAxisAlignment = MainAxisAlignment.Center,
-            crossAxisSpacing = 20.dp
+            crossAxisSpacing = 0.dp
         ) {
 
-            repeat(14){
+            repeat(9){
                     if(it == count.value){
                         Image(painter = painterResource(id = R.drawable.cog), contentDescription = null, modifier = Modifier.padding(top = 30.dp))
                         count.value = count.value + 3
