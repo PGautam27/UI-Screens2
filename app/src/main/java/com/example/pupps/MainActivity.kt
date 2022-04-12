@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PuppsTheme {
-                MyDay()
+                Cog()
             }
         }
     }
