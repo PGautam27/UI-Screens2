@@ -2,7 +2,6 @@ package com.example.pupps.percieverance.combosables
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
@@ -15,6 +14,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.pupps.R
+import com.example.pupps.percieverance.components.WakeUp
+import com.example.pupps.percieverance.components.scheduledCard
 
 @Composable
 fun MyDay() {
@@ -41,22 +42,33 @@ fun MyDay() {
                 .height(90.dp)
         )
         Spacer(modifier = Modifier.height(20.dp))
-        LazyRow(modifier = Modifier
-            .fillMaxWidth()
-            .height(130.dp)){
-            item {
-                Image(painter = painterResource(id = R.drawable.bed), contentDescription = null)
-            }
+        Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Spacer(modifier = Modifier.width(20.dp))
+            WakeUp()
         }
         Spacer(modifier = Modifier.height(22.dp))
-        Text(text = "Scheduled", style = TextStyle(color = Color(0xFF9B9B9B), fontSize = 12.sp))
-        Spacer(modifier = Modifier.height(2.dp))
-        LazyRow(modifier = Modifier
-            .fillMaxWidth()
-            .height(130.dp)){
-            item {
-
-            }
+        Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Spacer(modifier = Modifier.width(20.dp))
+            Text(text = "Scheduled", style = TextStyle(color = Color(0xFF9B9B9B), fontSize = 12.sp), textAlign = TextAlign.Start)
+        }
+        Spacer(modifier = Modifier.height(5.dp))
+        Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Spacer(modifier = Modifier.width(20.dp))
+            scheduledCard()
+            Spacer(modifier = Modifier.width(15.dp))
+            scheduledCard()
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+        Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Spacer(modifier = Modifier.width(20.dp))
+            Text(text = "Co demand", style = TextStyle(color = Color(0xFF9B9B9B), fontSize = 12.sp), textAlign = TextAlign.Start)
+        }
+        Spacer(modifier = Modifier.height(5.dp))
+        Row(horizontalArrangement = Arrangement.Start, verticalAlignment = Alignment.CenterVertically, modifier = Modifier.fillMaxWidth()) {
+            Spacer(modifier = Modifier.width(20.dp))
+            scheduledCard()
+            Spacer(modifier = Modifier.width(15.dp))
+            scheduledCard()
         }
     }
 }
