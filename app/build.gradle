@@ -87,4 +87,5 @@ dependencies {
 
     implementation "androidx.datastore:datastore-preferences:1.0.0-alpha01"
     implementation  "androidx.datastore:datastore-core:1.0.0-alpha01"
+    implementation "com.google.accompanist:accompanist-flowlayout:<version>"
 }
