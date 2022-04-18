@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.pupps.Animation.TextAnimationComponent
 import com.example.pupps.composable.Analysis
 import com.example.pupps.percieverance.combosables.MyDay
 import com.example.pupps.percieverance.components.Cog
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             PuppsTheme {
-                Cog()
+                TextAnimationComponent()
             }
         }
     }
