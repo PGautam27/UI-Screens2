@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.pupps.composable.Analysis
 import com.example.pupps.percieverance.combosables.MyDay
 import com.example.pupps.percieverance.components.Cog
+import com.example.pupps.percieverance.components.HangOverComponent
 import com.example.pupps.percieverance.components.WakeUp
 import com.example.pupps.percieverance.components.scheduledCard
 import com.example.pupps.ui.theme.PuppsTheme
