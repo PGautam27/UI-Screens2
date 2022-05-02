@@ -42,6 +42,7 @@ fun HangOverComponent() {
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.SpaceEvenly
         ) {
+
             stateList.forEachIndexed {  i, s ->
                 Button(
                     onClick = { index = i },
