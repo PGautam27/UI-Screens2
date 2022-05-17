@@ -94,7 +94,7 @@ fun SwipeLeftRight(index: Int) {
                         state = swipeableState,
                         anchors = anchors,
                         thresholds = { _, _ ->
-                            FractionalThreshold(0.3f)
+                            FractionalThreshold(1.0f)
                         },
                         orientation = Orientation.Horizontal
                     )
