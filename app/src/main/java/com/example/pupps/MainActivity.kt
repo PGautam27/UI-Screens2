@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.pupps.composable.SwipeCard
 import com.example.pupps.percieverance.combosables.MyDay
 import com.example.pupps.percieverance.components.Spotify
 import com.example.pupps.percieverance.components.faceBookIcon
@@ -27,13 +28,14 @@ class MainActivity : ComponentActivity() {
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
-                faceBookIcon()
-                Spacer(modifier = Modifier.padding(50.dp))
-                getGooglePhotosIcon()
-                Spacer(modifier = Modifier.padding(50.dp))
-                getWeatherApp()
-                Spotify()
-                Spacer(modifier = Modifier.padding(50.dp))
+//                faceBookIcon()
+//                Spacer(modifier = Modifier.padding(50.dp))
+//                getGooglePhotosIcon()
+//                Spacer(modifier = Modifier.padding(50.dp))
+//                getWeatherApp()
+//                Spotify()
+//                Spacer(modifier = Modifier.padding(50.dp))
+                SwipeCard()
             }
         }
     }
