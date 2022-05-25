@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.pupps.composable.BottomSheetDrawer
+import com.example.pupps.composable.Smiley
 import com.example.pupps.composable.SwipeCard
 import com.example.pupps.composable.swipe
 import com.example.pupps.percieverance.combosables.MyDay
@@ -41,7 +42,8 @@ class MainActivity : ComponentActivity() {
 //                Spacer(modifier = Modifier.padding(50.dp))
 //                SwipeCard()
 //                swipe()
-                BottomSheetDrawer()
+                //BottomSheetDrawer()
+                Smiley()
             }
         }
     }
