@@ -17,6 +17,7 @@ import com.example.pupps.composable.Smiley
 import com.example.pupps.composable.SwipeCard
 import com.example.pupps.composable.swipe
 import com.example.pupps.percieverance.combosables.MyDay
+import com.example.pupps.percieverance.combosables.hangOverChecklist
 import com.example.pupps.percieverance.components.Spotify
 import com.example.pupps.percieverance.components.faceBookIcon
 import com.example.pupps.percieverance.components.getGooglePhotosIcon
@@ -43,7 +44,8 @@ class MainActivity : ComponentActivity() {
 //                SwipeCard()
 //                swipe()
                 //BottomSheetDrawer()
-                Smiley()
+//                Smiley()
+            hangOverChecklist()
             }
         }
     }
