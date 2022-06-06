@@ -41,11 +41,11 @@ class MainActivity : ComponentActivity() {
 //                getWeatherApp()
 //                Spotify()
 //                Spacer(modifier = Modifier.padding(50.dp))
-//                SwipeCard()
-//                swipe()
+                SwipeCard()
+//               swipe()
                 //BottomSheetDrawer()
 //                Smiley()
-            hangOverChecklist()
+           // hangOverChecklist()
             }
         }
     }
