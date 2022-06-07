@@ -64,7 +64,7 @@ fun SwipeCard() {
 @ExperimentalMaterialApi
 @Composable
 fun SwipeLeftRight(index: Int) {
-    val squareSize = 60.dp
+    val squareSize = 200.dp
     val swipeableState = rememberSwipeableState(initialValue = 0)
     val sizePx = with(LocalDensity.current) { squareSize.toPx() }
     val anchors = mapOf(0f to 0, sizePx to 1, -sizePx to 2)
