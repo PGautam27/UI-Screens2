@@ -128,7 +128,8 @@ fun SetupDay() {
                     .height(LocalConfiguration.current.screenHeightDp.dp / 13)
             ) {
                 Image(painter = painterResource(id = s.img), contentDescription = null, modifier = Modifier
-                    .width(55.dp).height(45.dp)
+                    .width(55.dp)
+                    .height(45.dp)
                     .padding(start = 10.dp) )
                 Row(
                     verticalAlignment = Alignment.CenterVertically,
@@ -200,4 +201,9 @@ fun pie() {
             )
         )
     }
+}
+
+@Composable
+fun CanvasShapes() {
+    
 }
