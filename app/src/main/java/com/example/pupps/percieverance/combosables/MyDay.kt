@@ -27,7 +27,7 @@ fun MyDay() {
             title = {
                 Column() {
                     Image(
-                        painter = painterResource(id = R.drawable.img),
+                        painter = painterResource(id = R.drawable.routinebox),
                         contentDescription = null,
                         modifier = Modifier
                             .size(40.dp)

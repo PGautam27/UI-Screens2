@@ -8,13 +8,11 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.ContentAlpha
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
-import androidx.compose.ui.Alignment.Companion.CenterHorizontally
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
@@ -25,7 +23,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.pupps.R
 import com.google.accompanist.flowlayout.*
-import com.google.android.material.internal.FlowLayout
 
 @Composable
 fun Cog() {
@@ -52,7 +49,7 @@ fun Cog() {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Image(painter = painterResource(id = R.drawable.img), contentDescription = null, modifier = Modifier.size(40.dp))
+            Image(painter = painterResource(id = R.drawable.routinebox), contentDescription = null, modifier = Modifier.size(40.dp))
             Spacer(modifier = Modifier.height(5.dp))
             Text(text = "Let us know", fontSize = 34.sp, fontWeight = FontWeight.Bold)
             Spacer(modifier = Modifier.height(1.dp))
