@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.pupps.Internvenetion.Routine
+import com.example.pupps.Internvenetion.SetupDay
 import com.example.pupps.Internvenetion.habitTask
 import com.example.pupps.composable.BottomSheetDrawer
 import com.example.pupps.composable.Smiley
@@ -48,7 +49,8 @@ class MainActivity : ComponentActivity() {
 //                Routine()
                 //BottomSheetDrawer()
 //                Smiley()
-                habitTask()
+                SetupDay()
+//                habitTask()
            // hangOverChecklist()
             }
         }
