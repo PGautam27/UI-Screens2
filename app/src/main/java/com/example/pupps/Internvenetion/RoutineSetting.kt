@@ -1,13 +1,11 @@
 package com.example.pupps.Internvenetion
 
-import android.media.Image
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.LinearProgressIndicator
-import androidx.compose.material.RadioButton
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.List
@@ -16,7 +14,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.layout.layoutId
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.AnnotatedString
@@ -25,8 +22,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.unit.times
 import com.example.pupps.R
+import me.bytebeats.views.charts.pie.PieChart
+import me.bytebeats.views.charts.pie.PieChartData
+import me.bytebeats.views.charts.pie.render.SimpleSliceDrawer
 
 data class routines(
     val img : Int,
@@ -185,8 +184,7 @@ fun Window(text:String, bgColor: Color,fillColor:Color,hrs:String,progress: Floa
 @Composable
 fun pie() {
     Row(modifier = Modifier
-        .width(LocalConfiguration.current.screenWidthDp.dp - 60.dp)
-        .height(30.dp)) {
+        .width(LocalConfiguration.current.screenWidthDp.dp - 60.dp).height(100.dp)) {
         Box(
             modifier = Modifier
                 .padding(top = 2.dp)
@@ -200,10 +198,21 @@ fun pie() {
                 AnnotatedString(text = "8:30 hrs", spanStyle = SpanStyle(fontSize = 12.sp))
             )
         )
+            PieChart(
+                pieChartData = PieChartData(
+                    slices = listOf(
+                        PieChartData.Slice(
+                            0.32f,
+                            Color(0xFF799dff)
+                        ),
+                        PieChartData.Slice(
+                            0.68f,
+                            Color(0x80799dff)
+                        )
+                    ),
+                ),
+                sliceDrawer = SimpleSliceDrawer(sliceThickness = 100F),
+                modifier = Modifier.size(100.dp)
+            )
     }
-}
-
-@Composable
-fun CanvasShapes() {
-    
 }
