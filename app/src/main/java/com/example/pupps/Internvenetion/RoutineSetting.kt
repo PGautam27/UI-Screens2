@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Divider
 import androidx.compose.material.Icon
 import androidx.compose.material.LinearProgressIndicator
 import androidx.compose.material.Text
@@ -184,7 +185,8 @@ fun Window(text:String, bgColor: Color,fillColor:Color,hrs:String,progress: Floa
 @Composable
 fun pie() {
     Row(modifier = Modifier
-        .width(LocalConfiguration.current.screenWidthDp.dp - 60.dp).height(100.dp)) {
+        .width(LocalConfiguration.current.screenWidthDp.dp - 60.dp)
+        .height(100.dp)) {
         Box(
             modifier = Modifier
                 .padding(top = 2.dp)
